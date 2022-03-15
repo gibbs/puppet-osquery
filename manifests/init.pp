@@ -34,7 +34,7 @@
 #   The osquery repository GPG key id (apt)
 #
 # @param repo_key_server
-#   The osquery GPG key server to use (apt)
+#   The osquery GPG key server (apt) or GPG URL (yum)
 #
 # @param settings
 #   A hash of settings to set in the osquery configuration file
@@ -52,8 +52,8 @@ class osquery (
   Stdlib::Ensure::Service $service_ensure      = 'running',
   Boolean $manage_repo                         = true,
   String $repo_url                             = undef,
-  String $repo_key_id                          = undef,
-  String $repo_key_server                      = undef,
+  Optional[String] $repo_key_id                = undef,
+  Optional[String] $repo_key_server            = undef,
   Hash $settings                               = {},
 ) {
 
