@@ -1,0 +1,18 @@
+---
+osquery::package_name: osquery
+osquery::package_ensure: installed
+osquery::service_name: osqueryd
+osquery::service_enable: true
+osquery::service_ensure: running
+
+osquery::config_path: /etc/osquery/osquery.conf
+osquery::config_user: 0
+osquery::config_group: 0
+
+osquery::settings:
+  options:
+    config_plugin: filesystem
+    host_identifier: hostname
+    disable_logging: false
+    logger_plugin: syslog
+    worker_threads: "%{facts.processorcount}"

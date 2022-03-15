@@ -1,0 +1,8 @@
+---
+default:
+  provisioner: docker
+  images:
+    - 'litmusimage/debian:10'
+    - 'litmusimage/debian:11'
+    - 'litmusimage/ubuntu:20.04'
+    - 'litmusimage/ubuntu:18.04'

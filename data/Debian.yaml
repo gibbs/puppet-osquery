@@ -1,0 +1,4 @@
+---
+osquery::repo_url: https://pkg.osquery.io/deb
+osquery::repo_key_id: 1484120AC4E9F8A1A577AEEE97A80C63C9D8B80B
+osquery::repo_key_server: keyserver.ubuntu.com
