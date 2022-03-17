@@ -6,6 +6,8 @@ default:
     - 'litmusimage/centos:7'
     - 'litmusimage/debian:10'
     - 'litmusimage/debian:11'
+    - 'litmusimage/scientificlinux:6'
+    - 'litmusimage/scientificlinux:7'
     - 'litmusimage/ubuntu:20.04'
     - 'litmusimage/ubuntu:18.04'
     - 'litmusimage/rockylinux:8'
