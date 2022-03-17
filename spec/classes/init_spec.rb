@@ -21,6 +21,10 @@ describe 'osquery' do
           it { is_expected.to contain_apt__source('osquery') }
         end
 
+        if facts[:os]['family'] == 'RedHat'
+          it { is_expected.to contain_yumrepo('osquery-s3-rpm') }
+        end
+
         it { is_expected.to contain_package('osquery') }
         it { is_expected.to contain_service('osqueryd') }
         it { is_expected.to contain_file('/etc/osquery/osquery.conf') }

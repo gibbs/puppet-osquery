@@ -2,7 +2,10 @@
 default:
   provisioner: docker
   images:
+    - 'litmusimage/almalinux:8'
+    - 'litmusimage/centos:7'
     - 'litmusimage/debian:10'
     - 'litmusimage/debian:11'
     - 'litmusimage/ubuntu:20.04'
     - 'litmusimage/ubuntu:18.04'
+    - 'litmusimage/rockylinux:8'
