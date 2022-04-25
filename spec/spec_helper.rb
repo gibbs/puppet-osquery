@@ -45,8 +45,8 @@ RSpec.configure do |c|
     Puppet.settings[:strict_variables] = true
   end
   c.filter_run_excluding(bolt: true) unless ENV['GEM_BOLT']
-  c.facter_implementation = :rspec
   c.after(:suite) do
+    RSpec::Puppet::Coverage.report!(0)
   end
 
   # Filter backtrace noise
@@ -71,6 +71,7 @@ def ensure_module_defined(module_name)
   end
 end
 
-at_exit { RSpec::Puppet::Coverage.report! }
-
 # 'spec_overrides' from sync.yml will appear below this line
+RSpec.configure do |c|
+  c.facter_implementation = :rspec
+end

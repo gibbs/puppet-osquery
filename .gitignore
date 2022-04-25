@@ -1,4 +1,3 @@
-/[Bb]ackup*/
 .git/
 .*.sw[op]
 .metadata
@@ -27,3 +26,9 @@
 .envrc
 /inventory.yaml
 /spec/fixtures/litmus_inventory.yaml
+/[Bb]ackup*/
+/.devcontainer/
+/.gitlab-ci.yml
+/.travis.yml
+/.vscode/
+/appveyor.yml

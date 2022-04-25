@@ -1,4 +1,3 @@
-/[Bb]ackup*/
 .git/
 .*.sw[op]
 .metadata
@@ -46,4 +45,5 @@
 /.vscode/
 /.sync.yml
 /.devcontainer/
+/[Bb]ackup*/
 /provision.yaml
