@@ -2,6 +2,7 @@
 
 [![Build Status](https://github.com/gibbs/puppet-osquery/workflows/CI/badge.svg)](https://github.com/gibbs/puppet-osquery/actions?query=workflow%3ACI)
 [![Release](https://github.com/gibbs/puppet-osquery/workflows/Release/badge.svg)](https://github.com/gibbs/puppet-osquery/actions?query=workflow%3ARelease)
+[![Puppet Forge](https://img.shields.io/puppetforge/v/genv/osquery.svg?maxAge=2592000?style=plastic)](https://forge.puppet.com/genv/osquery)
 [![Apache-2 License](https://img.shields.io/github/license/gibbs/puppet-osquery.svg)](LICENSE)
 
 Install, configure and manage osquery.
