@@ -15,7 +15,7 @@ class osquery::package {
           key      => {
             id     => $osquery::repo_key_id,
             server => $osquery::repo_key_server,
-          }
+          },
         }
 
         Package<|title == $osquery::package_name|> {
