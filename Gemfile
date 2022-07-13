@@ -28,6 +28,7 @@ group :development do
   gem "puppet-lint-file_ensure-check",                           require: false
   gem "puppet-lint-manifest_whitespace-check",                   require: false
   gem "puppet-lint-trailing_comma-check",                        require: false
+  gem "puppet-lint-optional_default-check",                      require: false
 end
 group :system_tests do
   gem "puppet-module-posix-system-r#{minor_version}", '~> 1.0', require: false, platforms: [:ruby]

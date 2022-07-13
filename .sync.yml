@@ -21,6 +21,8 @@ appveyor.yml:
   paths:
     - /[Bb]ackup*/
     - /provision.yaml
+    - /.github
+    - /pdk.yaml
 Gemfile:
   unmanaged: false
   optional:

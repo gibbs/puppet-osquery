@@ -1,10 +1,12 @@
 {
   "name": "genv-osquery",
-  "version": "0.1.0",
-  "author": "Dan Gibbs <dev@dangibbs.co.uk>",
+  "version": "1.0.0",
+  "author": "gibbs",
   "summary": "Install, configure and manage osquery",
   "license": "Apache-2.0",
   "source": "https://github.com/gibbs/puppet-osquery",
+  "project_page": "https://github.com/gibbs/puppet-osquery",
+  "issues_url": "https://github.com/gibbs/puppet-osquery/issues",
   "dependencies": [
     {
       "name": "puppetlabs/stdlib",
