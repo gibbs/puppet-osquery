@@ -56,7 +56,6 @@ class osquery (
   Optional[String] $repo_key_server            = undef,
   Hash $settings                               = {},
 ) {
-
   contain osquery::package
   contain osquery::config
   contain osquery::service

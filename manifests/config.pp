@@ -6,7 +6,7 @@ class osquery::config {
   assert_private()
 
   file { $osquery::config_path:
-    ensure       => present,
+    ensure       => file,
     owner        => $osquery::config_owner,
     group        => $osquery::config_group,
     mode         => '0640',
