@@ -26,21 +26,21 @@ osquery
 
 The following parameters are available in the `osquery` class:
 
-* [`config_path`](#config_path)
-* [`config_owner`](#config_owner)
-* [`config_group`](#config_group)
-* [`package_name`](#package_name)
-* [`package_ensure`](#package_ensure)
-* [`service_name`](#service_name)
-* [`service_enable`](#service_enable)
-* [`service_ensure`](#service_ensure)
-* [`manage_repo`](#manage_repo)
-* [`repo_url`](#repo_url)
-* [`repo_key_id`](#repo_key_id)
-* [`repo_key_server`](#repo_key_server)
-* [`settings`](#settings)
+* [`config_path`](#-osquery--config_path)
+* [`config_owner`](#-osquery--config_owner)
+* [`config_group`](#-osquery--config_group)
+* [`package_name`](#-osquery--package_name)
+* [`package_ensure`](#-osquery--package_ensure)
+* [`service_name`](#-osquery--service_name)
+* [`service_enable`](#-osquery--service_enable)
+* [`service_ensure`](#-osquery--service_ensure)
+* [`manage_repo`](#-osquery--manage_repo)
+* [`repo_url`](#-osquery--repo_url)
+* [`repo_key_id`](#-osquery--repo_key_id)
+* [`repo_key_server`](#-osquery--repo_key_server)
+* [`settings`](#-osquery--settings)
 
-##### <a name="config_path"></a>`config_path`
+##### <a name="-osquery--config_path"></a>`config_path`
 
 Data type: `Stdlib::AbsolutePath`
 
@@ -48,7 +48,7 @@ The absolute path to the osquery configuration file
 
 Default value: `'/etc/osquery/osquery.conf'`
 
-##### <a name="config_owner"></a>`config_owner`
+##### <a name="-osquery--config_owner"></a>`config_owner`
 
 Data type: `Variant[Integer[0], String[1]]`
 
@@ -56,7 +56,7 @@ The owner to set on the osquery configuration file
 
 Default value: `0`
 
-##### <a name="config_group"></a>`config_group`
+##### <a name="-osquery--config_group"></a>`config_group`
 
 Data type: `Variant[Integer[0], String[1]]`
 
@@ -64,7 +64,7 @@ The group to set on the osquery configuration file
 
 Default value: `0`
 
-##### <a name="package_name"></a>`package_name`
+##### <a name="-osquery--package_name"></a>`package_name`
 
 Data type: `String[1]`
 
@@ -72,7 +72,7 @@ The osquery package name
 
 Default value: `'osquery'`
 
-##### <a name="package_ensure"></a>`package_ensure`
+##### <a name="-osquery--package_ensure"></a>`package_ensure`
 
 Data type: `String`
 
@@ -80,7 +80,7 @@ The osquery package ensure state
 
 Default value: `'installed'`
 
-##### <a name="service_name"></a>`service_name`
+##### <a name="-osquery--service_name"></a>`service_name`
 
 Data type: `String[1]`
 
@@ -88,15 +88,15 @@ The osquery service name
 
 Default value: `'osqueryd'`
 
-##### <a name="service_enable"></a>`service_enable`
+##### <a name="-osquery--service_enable"></a>`service_enable`
 
 Data type: `Boolean`
 
 The osquery service enable state
 
-Default value: ``true``
+Default value: `true`
 
-##### <a name="service_ensure"></a>`service_ensure`
+##### <a name="-osquery--service_ensure"></a>`service_ensure`
 
 Data type: `Stdlib::Ensure::Service`
 
@@ -104,39 +104,39 @@ The osquery service ensure state
 
 Default value: `'running'`
 
-##### <a name="manage_repo"></a>`manage_repo`
+##### <a name="-osquery--manage_repo"></a>`manage_repo`
 
 Data type: `Boolean`
 
 Set to true to manage the osquery repository
 
-Default value: ``true``
+Default value: `true`
 
-##### <a name="repo_url"></a>`repo_url`
+##### <a name="-osquery--repo_url"></a>`repo_url`
 
 Data type: `String`
 
 The osquery repository URL to use
 
-Default value: ``undef``
+Default value: `undef`
 
-##### <a name="repo_key_id"></a>`repo_key_id`
+##### <a name="-osquery--repo_key_id"></a>`repo_key_id`
 
 Data type: `Optional[String]`
 
 The osquery repository GPG key id (apt)
 
-Default value: ``undef``
+Default value: `undef`
 
-##### <a name="repo_key_server"></a>`repo_key_server`
+##### <a name="-osquery--repo_key_server"></a>`repo_key_server`
 
 Data type: `Optional[String]`
 
 The osquery GPG key server (apt) or GPG URL (yum)
 
-Default value: ``undef``
+Default value: `undef`
 
-##### <a name="settings"></a>`settings`
+##### <a name="-osquery--settings"></a>`settings`
 
 Data type: `Hash`
 
