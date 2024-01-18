@@ -23,6 +23,10 @@ appveyor.yml:
     - /provision.yaml
     - /.github
     - /pdk.yaml
+Rakefile:
+  requires:
+      - require: puppet_blacksmith/rake_tasks
+        conditional: "Gem.loaded_specs.key? 'puppet-blacksmith'"
 Gemfile:
   unmanaged: false
   optional:
@@ -41,6 +45,8 @@ Gemfile:
     ':test':
       - gem: 'puppet_metadata'
         version: '~> 1.0'
+      - gem: 'puppet-blacksmith'
+        require: false
 spec/spec_helper.rb:
   coverage_report: true
   spec_overrides:
