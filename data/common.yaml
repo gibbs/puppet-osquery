@@ -8,6 +8,7 @@ osquery::service_ensure: running
 osquery::config_path: /etc/osquery/osquery.conf
 osquery::config_owner: 0
 osquery::config_group: 0
+osquery::validate_cmd: '/usr/bin/osqueryi --config_path % --config_check'
 
 osquery::settings:
   options:

@@ -1,0 +1,11 @@
+---
+osquery::config_path: 'C:/Program Files/osquery/osquery.conf'
+osquery::config_group: Administrator
+osquery::config_owner: Administrator
+osquery::package_provider: chocolatey
+osquery::package_install_options:
+  - -params
+  - /InstallService
+osquery::service_name: osqueryd
+osquery::settings: ~
+osquery::validate_cmd: 'C:/Program Files/osquery/osqueryi --config_path "%" --config_check'

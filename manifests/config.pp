@@ -10,9 +10,9 @@ class osquery::config {
     owner        => $osquery::config_owner,
     group        => $osquery::config_group,
     mode         => '0640',
-    content      => to_json_pretty($osquery::settings),
+    content      => stdlib::to_json_pretty($osquery::settings),
     notify       => Service[$osquery::service_name],
     require      => Package[$osquery::package_name],
-    validate_cmd => '/usr/bin/osqueryi --config_path % --config_check',
+    validate_cmd => $osquery::validate_cmd,
   }
 }

@@ -15,6 +15,12 @@
 # @param package_ensure
 #   The osquery package ensure state
 #
+# @param package_provider
+#   The package provider to use (Windows)
+#
+# @param package_install_options
+#   The install_options to provide when using Chocolatey (Windows)
+#
 # @param service_name
 #   The osquery service name
 #
@@ -39,6 +45,9 @@
 # @param settings
 #   A hash of settings to set in the osquery configuration file
 #
+# @param validate_cmd
+#   The command to validate osquery.conf format changes
+#
 # @author Dan Gibbs <dev@dangibbs.co.uk>
 #
 class osquery (
@@ -47,14 +56,17 @@ class osquery (
   Variant[Integer[0], String[1]] $config_group = 0,
   String[1] $package_name                      = 'osquery',
   String $package_ensure                       = 'installed',
+  Optional[String] $package_provider           = undef,
+  Optional[Array] $package_install_options     = undef,
   String[1] $service_name                      = 'osqueryd',
   Boolean $service_enable                      = true,
   Stdlib::Ensure::Service $service_ensure      = 'running',
   Boolean $manage_repo                         = true,
-  String $repo_url                             = undef,
+  Optional[String] $repo_url                   = undef,
   Optional[String] $repo_key_id                = undef,
   Optional[String] $repo_key_server            = undef,
   Hash $settings                               = {},
+  String $validate_cmd                         = '/usr/bin/osqueryi --config_path % --config_check',
 ) {
   contain osquery::package
   contain osquery::config

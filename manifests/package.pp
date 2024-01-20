@@ -35,6 +35,17 @@ class osquery::package {
           require => Yumrepo['osquery-s3-rpm'],
         }
       }
+      'windows': {
+        Package<|title == $osquery::package_name|> {
+          provider => $osquery::package_provider,
+        }
+
+        if $osquery::package_provider == 'chocolatey' {
+          Package<|title == $osquery::package_name|> {
+            install_options => $osquery::package_install_options,
+          }
+        }
+      }
       default: {
         fail("Repository for ${facts[os][family]} is not supported.")
       }

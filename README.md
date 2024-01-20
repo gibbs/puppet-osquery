@@ -55,3 +55,21 @@ osquery::settings:
         query: SELECT * FROM suid_bins;
         interval: 3600
 ```
+
+## Dependencies
+
+The following modules are soft dependencies that are required
+depending on the OS family used.
+
+### Debian Family
+
+- `puppetlabs/apt` >= 9.1.0
+
+### RedHat Family
+
+- `puppetlabs/yumrepo_core` >= 1.2.0
+
+### Windows Family
+
+- `puppetlabs/chocolatey` >= 8.0.0
+
