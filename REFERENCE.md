@@ -31,6 +31,8 @@ The following parameters are available in the `osquery` class:
 * [`config_group`](#-osquery--config_group)
 * [`package_name`](#-osquery--package_name)
 * [`package_ensure`](#-osquery--package_ensure)
+* [`package_provider`](#-osquery--package_provider)
+* [`package_install_options`](#-osquery--package_install_options)
 * [`service_name`](#-osquery--service_name)
 * [`service_enable`](#-osquery--service_enable)
 * [`service_ensure`](#-osquery--service_ensure)
@@ -39,6 +41,7 @@ The following parameters are available in the `osquery` class:
 * [`repo_key_id`](#-osquery--repo_key_id)
 * [`repo_key_server`](#-osquery--repo_key_server)
 * [`settings`](#-osquery--settings)
+* [`validate_cmd`](#-osquery--validate_cmd)
 
 ##### <a name="-osquery--config_path"></a>`config_path`
 
@@ -80,6 +83,22 @@ The osquery package ensure state
 
 Default value: `'installed'`
 
+##### <a name="-osquery--package_provider"></a>`package_provider`
+
+Data type: `Optional[String]`
+
+The package provider to use (Windows)
+
+Default value: `undef`
+
+##### <a name="-osquery--package_install_options"></a>`package_install_options`
+
+Data type: `Optional[Array]`
+
+The install_options to provide when using Chocolatey (Windows)
+
+Default value: `undef`
+
 ##### <a name="-osquery--service_name"></a>`service_name`
 
 Data type: `String[1]`
@@ -114,7 +133,7 @@ Default value: `true`
 
 ##### <a name="-osquery--repo_url"></a>`repo_url`
 
-Data type: `String`
+Data type: `Optional[String]`
 
 The osquery repository URL to use
 
@@ -143,4 +162,12 @@ Data type: `Hash`
 A hash of settings to set in the osquery configuration file
 
 Default value: `{}`
+
+##### <a name="-osquery--validate_cmd"></a>`validate_cmd`
+
+Data type: `String`
+
+The command to validate osquery.conf format changes
+
+Default value: `'/usr/bin/osqueryi --config_path % --config_check'`
 

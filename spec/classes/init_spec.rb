@@ -25,9 +25,16 @@ describe 'osquery' do
           it { is_expected.to contain_yumrepo('osquery-s3-rpm') }
         end
 
+        if ['Debian', 'Redhat'].include? facts[:os]['family']
+          it { is_expected.to contain_file('/etc/osquery/osquery.conf') }
+        end
+
+        if facts[:os]['family'] == 'windows'
+          it { is_expected.to contain_file('C:/Program Files/osquery/osquery.conf') }
+        end
+
         it { is_expected.to contain_package('osquery') }
         it { is_expected.to contain_service('osqueryd') }
-        it { is_expected.to contain_file('/etc/osquery/osquery.conf') }
       end
     end
   end
