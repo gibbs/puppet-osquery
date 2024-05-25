@@ -1,7 +1,10 @@
 ---
 name: CI
 
-on: pull_request
+on:
+  pull_request:
+    branches: [ master, main ]
+  workflow_dispatch:
 
 concurrency:
   group: ${{ github.head_ref }}
