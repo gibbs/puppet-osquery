@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file. The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/) and this project adheres to [Semantic Versioning](http://semver.org).
 
+## [v1.1.0](https://github.com/gibbs/puppet-osquery/tree/v1.1.0) (2024-05-26)
+
+[Full Changelog](https://github.com/gibbs/puppet-osquery/compare/v1.0.0...v1.1.0)
+
+### Added
+
+- Add support for Windows [\#12](https://github.com/gibbs/puppet-osquery/pull/12) ([gibbs](https://github.com/gibbs))
+- Add Ubuntu 22.04 support [\#11](https://github.com/gibbs/puppet-osquery/pull/11) ([gibbs](https://github.com/gibbs))
+
+### Fixed
+
+- Puppet 8 Support [\#6](https://github.com/gibbs/puppet-osquery/pull/6) ([gibbs](https://github.com/gibbs))
+
 ## [v1.0.0](https://github.com/gibbs/puppet-osquery/tree/v1.0.0) (2022-07-13)
 
 [Full Changelog](https://github.com/gibbs/puppet-osquery/compare/0.1.0...v1.0.0)
