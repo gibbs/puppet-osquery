@@ -76,6 +76,7 @@ jobs:
         run: |
           bundle exec rake 'litmus:provision_list[default]'
           bundle exec rake 'litmus:install_agent'
+          bundle exec rake 'litmus:install_modules_from_directory'
           bundle exec rake 'litmus:install_module'
       - name: Run Tests
         run: bundle exec rake 'litmus:acceptance:parallel'
