@@ -8,3 +8,4 @@ default:
     - 'litmusimage/ubuntu:20.04'
     - 'litmusimage/ubuntu:22.04'
     - 'litmusimage/rockylinux:8'
+    - 'litmusimage/rockylinux:9'
