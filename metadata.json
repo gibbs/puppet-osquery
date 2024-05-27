@@ -36,6 +36,7 @@
     {
       "operatingsystem": "Rocky",
       "operatingsystemrelease": [
+        "9",
         "8"
       ]
     },
