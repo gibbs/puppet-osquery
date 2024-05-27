@@ -23,6 +23,7 @@
     {
       "operatingsystem": "Debian",
       "operatingsystemrelease": [
+        "12",
         "11"
       ]
     },
