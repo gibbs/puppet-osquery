@@ -35,7 +35,7 @@ jobs:
 
       - name: Setup Test Matrix
         id: get-outputs
-        run: bundle exec metadata2gha --use-fqdn --pidfile-workaround false
+        run: bundle exec metadata2gha --pidfile-workaround false
 
   unit:
     needs: setup_matrix
@@ -60,6 +60,7 @@ jobs:
 
   acceptance:
     name: Litmus Acceptance
+    needs: unit
     runs-on: ubuntu-20.04
     env:
       BOLT_GEM: true
