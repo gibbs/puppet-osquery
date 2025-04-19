@@ -9,6 +9,14 @@ require 'puppet_blacksmith/rake_tasks' if Gem.loaded_specs.key? 'puppet-blacksmi
 require 'github_changelog_generator/task' if Gem.loaded_specs.key? 'github_changelog_generator'
 
 PuppetLint.configuration.send('disable_relative')
+PuppetLint.configuration.send('disable_80chars')
+PuppetLint.configuration.send('disable_140chars')
+PuppetLint.configuration.send('disable_class_inherits_from_params_class')
+PuppetLint.configuration.send('disable_autoloader_layout')
+PuppetLint.configuration.send('disable_documentation')
+PuppetLint.configuration.send('disable_single_quote_string_with_variables')
+PuppetLint.configuration.fail_on_warnings = true
+PuppetLint.configuration.ignore_paths = [".vendor/**/*.pp", ".bundle/**/*.pp", "pkg/**/*.pp", "spec/**/*.pp", "tests/**/*.pp", "types/**/*.pp", "vendor/**/*.pp"]
 
 def changelog_user
   return unless Rake.application.top_level_tasks.include? "changelog"
