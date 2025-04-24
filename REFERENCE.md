@@ -40,6 +40,8 @@ The following parameters are available in the `osquery` class:
 * [`repo_url`](#-osquery--repo_url)
 * [`repo_key_id`](#-osquery--repo_key_id)
 * [`repo_key_server`](#-osquery--repo_key_server)
+* [`repo_key_name`](#-osquery--repo_key_name)
+* [`repo_key_source`](#-osquery--repo_key_source)
 * [`settings`](#-osquery--settings)
 * [`validate_cmd`](#-osquery--validate_cmd)
 
@@ -152,6 +154,22 @@ Default value: `undef`
 Data type: `Optional[String]`
 
 The osquery GPG key server (apt) or GPG URL (yum)
+
+Default value: `undef`
+
+##### <a name="-osquery--repo_key_name"></a>`repo_key_name`
+
+Data type: `Optional[String]`
+
+The osquery APT keyring name
+
+Default value: `undef`
+
+##### <a name="-osquery--repo_key_source"></a>`repo_key_source`
+
+Data type: `Optional[String]`
+
+The osquery APT keyring file source
 
 Default value: `undef`
 
