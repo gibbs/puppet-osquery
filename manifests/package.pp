@@ -53,6 +53,6 @@ class osquery::package {
   }
 
   package { $osquery::package_name:
-    ensure  => $osquery::package_ensure,
+    ensure => $osquery::package_ensure,
   }
 }

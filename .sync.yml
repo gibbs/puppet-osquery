@@ -124,8 +124,6 @@ Gemfile:
     ':test':
       - gem: 'puppet_metadata'
         version: '~> 4.0'
-      - gem: 'puppet-blacksmith'
-        require: false
       - gem: 'ed25519'
         version:
           - '>= 1.2'

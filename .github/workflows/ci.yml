@@ -13,7 +13,7 @@ concurrency:
 jobs:
   setup_matrix:
     name: Setup Test Matrix
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-24.04
     timeout-minutes: 40
     outputs:
       puppet_unit_test_matrix: ${{ steps.get-outputs.outputs.puppet_unit_test_matrix }}
@@ -39,7 +39,7 @@ jobs:
 
   unit:
     needs: setup_matrix
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-24.04
     timeout-minutes: 40
     strategy:
       fail-fast: false
@@ -61,7 +61,7 @@ jobs:
   acceptance:
     name: Litmus Acceptance
     needs: unit
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-24.04
     env:
       BOLT_GEM: true
       CI: true
@@ -89,7 +89,7 @@ jobs:
     needs:
       - unit
       - acceptance
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-24.04
     name: Test suite
     steps:
       - run: echo Test suite completed
