@@ -42,6 +42,12 @@
 # @param repo_key_server
 #   The osquery GPG key server (apt) or GPG URL (yum)
 #
+# @param repo_key_name
+#   The osquery APT keyring name
+#
+# @param repo_key_source
+#   The osquery APT keyring file source
+#
 # @param settings
 #   A hash of settings to set in the osquery configuration file
 #
@@ -65,6 +71,8 @@ class osquery (
   Optional[String] $repo_url                   = undef,
   Optional[String] $repo_key_id                = undef,
   Optional[String] $repo_key_server            = undef,
+  Optional[String] $repo_key_name              = undef,
+  Optional[String] $repo_key_source            = undef,
   Hash $settings                               = {},
   String $validate_cmd                         = '/usr/bin/osqueryi --config_path % --config_check',
 ) {

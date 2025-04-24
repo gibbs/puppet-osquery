@@ -13,8 +13,8 @@ class osquery::package {
           release  => 'deb',
           repos    => 'main',
           key      => {
-            id     => $osquery::repo_key_id,
-            server => $osquery::repo_key_server,
+            name   => $osquery::repo_key_name,
+            source => $osquery::repo_key_source,
           },
         }
 
