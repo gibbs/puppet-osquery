@@ -63,7 +63,6 @@ jobs:
     needs: unit
     runs-on: ubuntu-24.04
     env:
-      BOLT_GEM: true
       CI: true
     steps:
       - uses: actions/checkout@v4
