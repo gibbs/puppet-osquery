@@ -2,6 +2,22 @@
 
 All notable changes to this project will be documented in this file. The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/) and this project adheres to [Semantic Versioning](http://semver.org).
 
+## [v1.2.0](https://github.com/gibbs/puppet-osquery/tree/v1.2.0) (2025-04-26)
+
+[Full Changelog](https://github.com/gibbs/puppet-osquery/compare/v1.1.0...v1.2.0)
+
+### Added
+
+- Add Ubuntu 24.04 support [\#20](https://github.com/gibbs/puppet-osquery/pull/20) ([gibbs](https://github.com/gibbs))
+- Remove Puppet 7 support \(EOL\) [\#18](https://github.com/gibbs/puppet-osquery/pull/18) ([gibbs](https://github.com/gibbs))
+- Add AlmaLinux 9 support [\#15](https://github.com/gibbs/puppet-osquery/pull/15) ([gibbs](https://github.com/gibbs))
+- Add RockyLinux 9 support [\#14](https://github.com/gibbs/puppet-osquery/pull/14) ([gibbs](https://github.com/gibbs))
+- Add Debian 12 Support [\#13](https://github.com/gibbs/puppet-osquery/pull/13) ([gibbs](https://github.com/gibbs))
+
+### Fixed
+
+- Replace deprecated legacy apt keyring install [\#19](https://github.com/gibbs/puppet-osquery/pull/19) ([gibbs](https://github.com/gibbs))
+
 ## [v1.1.0](https://github.com/gibbs/puppet-osquery/tree/v1.1.0) (2024-05-26)
 
 [Full Changelog](https://github.com/gibbs/puppet-osquery/compare/v1.0.0...v1.1.0)
