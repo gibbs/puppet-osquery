@@ -1,5 +1,5 @@
 ---
-name: CI
+name: Testing
 
 on:
   pull_request:
@@ -59,7 +59,7 @@ jobs:
         run: bundle exec rake parallel_spec
 
   acceptance:
-    name: Litmus Acceptance
+    name: Acceptance Test
     needs: unit
     runs-on: ubuntu-24.04
     env:
