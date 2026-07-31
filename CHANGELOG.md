@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/) and this project adheres to [Semantic Versioning](http://semver.org).
 
+## [v1.3.0](https://github.com/gibbs/puppet-osquery/tree/v1.3.0) (2026-07-31)
+
+[Full Changelog](https://github.com/gibbs/puppet-osquery/compare/v1.2.0...v1.3.0)
+
+### Added
+
+- feat: add support for RedHat 9 and Debian 13 [\#27](https://github.com/gibbs/puppet-osquery/pull/27) ([gibbs](https://github.com/gibbs))
+- feat: update stdlib dependency to \< 11.0.0 [\#26](https://github.com/gibbs/puppet-osquery/pull/26) ([gibbs](https://github.com/gibbs))
+
 ## [v1.2.0](https://github.com/gibbs/puppet-osquery/tree/v1.2.0) (2025-04-26)
 
 [Full Changelog](https://github.com/gibbs/puppet-osquery/compare/v1.1.0...v1.2.0)
