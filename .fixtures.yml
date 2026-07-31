@@ -6,7 +6,9 @@ fixtures:
     facts: https://github.com/puppetlabs/puppetlabs-facts.git
     provision: https://github.com/puppetlabs/provision.git
     puppet_agent: https://github.com/puppetlabs/puppetlabs-puppet_agent.git
-    stdlib: https://github.com/puppetlabs/puppetlabs-stdlib
+    stdlib:
+      repo: "https://github.com/puppetlabs/puppetlabs-stdlib"
+      ref: "v9.7.0"
     yumrepo_core: https://github.com/puppetlabs/puppetlabs-yumrepo_core
   symlinks:
     osquery: "#{source_dir}"
