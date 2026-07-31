@@ -9,6 +9,8 @@ fixtures:
     stdlib:
       repo: "https://github.com/puppetlabs/puppetlabs-stdlib"
       ref: "v9.7.0"
-    yumrepo_core: https://github.com/puppetlabs/puppetlabs-yumrepo_core
+    yumrepo_core:
+      repo: "https://github.com/puppetlabs/puppetlabs-yumrepo_core"
+      ref: "0a1b7a2a2d7fbf2eb53db4aed04ac55f15a2fba5"
   symlinks:
     osquery: "#{source_dir}"
