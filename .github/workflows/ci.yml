@@ -76,6 +76,10 @@ jobs:
       - name: Provision Environments
         run: bundle exec rake 'litmus:provision_list[default]'
 
+      # Workaround for EL9 PAM auth based failures
+      - name: Setup key based auth for Bolt SSH
+        run: ruby .github/scripts/bolt_ssh_key_auth.rb
+
       - name: Install agent
         run: bundle exec rake 'litmus:install_agent'
 
