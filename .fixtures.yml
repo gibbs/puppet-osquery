@@ -8,7 +8,7 @@ fixtures:
     puppet_agent: https://github.com/puppetlabs/puppetlabs-puppet_agent.git
     stdlib:
       repo: "https://github.com/puppetlabs/puppetlabs-stdlib"
-      ref: "v9.7.0"
+      ref: "v10.0.1"
     yumrepo_core:
       repo: "https://github.com/puppetlabs/puppetlabs-yumrepo_core"
       ref: "0a1b7a2a2d7fbf2eb53db4aed04ac55f15a2fba5"
