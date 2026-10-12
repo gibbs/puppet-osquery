@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/) and this project adheres to [Semantic Versioning](http://semver.org).
 
+## [v1.3.1](https://github.com/gibbs/puppet-osquery/tree/v1.3.1) (2026-10-12)
+
+[Full Changelog](https://github.com/gibbs/puppet-osquery/compare/v1.3.0...v1.3.1)
+
+### Added
+
+- Move repo and key defaults to pkg.osquerypackages.com [\#28](https://github.com/gibbs/puppet-osquery/pull/28) ([grant-veepshosting](https://github.com/grant-veepshosting))
+
 ## [v1.3.0](https://github.com/gibbs/puppet-osquery/tree/v1.3.0) (2026-07-31)
 
 [Full Changelog](https://github.com/gibbs/puppet-osquery/compare/v1.2.0...v1.3.0)
