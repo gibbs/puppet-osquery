@@ -1,4 +1,4 @@
 ---
-osquery::repo_url: https://pkg.osquery.io/deb
+osquery::repo_url: https://pkg.osquerypackages.com/deb
 osquery::repo_key_name: osquery.asc
-osquery::repo_key_source: https://pkg.osquery.io/deb/pubkey.gpg
+osquery::repo_key_source: https://pkg.osquerypackages.com/deb/pubkey.gpg
